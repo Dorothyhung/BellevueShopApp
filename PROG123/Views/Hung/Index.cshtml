@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_HungLayout.cshtml";
+}
+
+
+@model PROG123.Models.LogInCredentialsModel
+
+<h1>Sign In</h1>
+<form id="loginform" asp-action="Login" method="post">
+    <div class="inputwrap">
+        <label>Name:</label>
+        <input asp-for="UserName" class="roundCorners" required size="15" onclick="value=' '" /><br />
+    </div>
+    <div class="inputwrap">
+        <label>Password:</label>
+        <input asp-for="UserPassword" class="roundCorners" required size="15" onclick="value=' '" />
+    </div>
+    <div class="inputwrap">
+        <label><button type="submit">Sign In</button></label>
+        <label style="color:red;">@ViewBag.LoginMessage</label>
+        <label style="color:red;">@ViewBag.ErrorMessage</label>
+    </div>
+</form>
+

@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "ListAllProducts";
+    Layout = "~/Views/Shared/_HungLayout.cshtml";
+}
+@model LinkedList<PROG123.Models.ProductModel>
+
+<h1>Bellevue Shop</h1>
+<h2>Fresh Produce and Dairy</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>PID</th>
+            <th>Inventory</th>
+            <th>Buy?</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (PROG123.Models.ProductModel productModel in Model)
+            {
+        <tr>
+            <td>@productModel.Name</td>
+            <td>@productModel.Description</td>
+            <td>@productModel.Price</td>
+            <td>@productModel.PID</td>
+            <td>@productModel.InventoryAmount</td>
+            <td><a href="@Url.Action("OneClickBuy", "Hung", new {PID=productModel.PID})">Buy This Item</a></td>
+        </tr>
+            }
+    </tbody>
+</table>

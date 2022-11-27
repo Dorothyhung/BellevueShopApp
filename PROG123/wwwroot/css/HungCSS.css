@@ -1,0 +1,58 @@
+﻿body {
+}
+
+p {
+    padding: 10px;
+}
+
+#content {
+    float: left;
+    width: 80%;
+}
+
+header {
+    float: left;
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+article {
+    background-color: lightgray;
+    margin-left: 170px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    background-color: lightgreen;
+    text-align: center;
+    width: 150px;
+    margin-left: -80%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+table {
+    text-align: center;
+}
+
+footer {
+    border-radius: 10px;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    background: #4cff00;
+    background-color: lightblue;
+    clear: both;
+}
+
+ul {
+    margin: 4px;
+    padding-left: 10px;
+    list-style-type: none;
+}

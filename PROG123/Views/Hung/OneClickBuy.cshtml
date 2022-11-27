@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "OneClickBuy";
+    Layout = "~/Views/Shared/_HungLayout.cshtml";
+}
+@model PROG123.Models.PurchaseModel
+
+<h1>Bellevue Shop</h1>
+<h2>Your Order</h2>
+
+<div>
+    Hi @Model.PersonModel.FName,
+    <br />
+    Here is your order summary:
+    <br />
+    Product: @Model.ProductModel.Name
+    <br />
+    Quantity: 1
+    <br />
+    Charge: @Model.ProductModel.Price.ToString("C")
+    <br />
+    Shpped to: @Model.PersonModel.Address
+    <br />
+    Thank you for your order! Please come back soon.
+</div>

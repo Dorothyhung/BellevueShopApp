@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "AddProductToDB";
+    Layout = "~/Views/Shared/_HungLayout.cshtml";
+}
+@model PROG123.Models.ProductModel
+
+
+<h1>AddProductToDB</h1>
+
+
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add Product to DB</title>
+</head>
+<body>
+    <br />
+
+    <h1>Name: @Model.Name</h1>
+    <h1>Description: @Model.Description</h1>
+    <h1>Price: $@Model.Price</h1>
+    <h1>Inventory: @Model.InventoryAmount</h1>
+    <h1>PID: @Model.PID</h1>
+    <a href="@Url.Action("EnterNewProduct","Hung")">Add Another Product</a>
+</body>
+

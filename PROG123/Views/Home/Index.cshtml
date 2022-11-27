@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+@model PROG123.Models.PersonModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <!--
+    <h3>
+        Status of the connection string and DB Connection <br /><br />
+        Connection String:: @ViewBag.ConnStr
+        <br />
+        Database Connection:: @ViewBag.DBStatus
+    </h3>
+    <br />
+    <h3 style="color:red;">Exception:: @ViewBag.Exception</h3>
+    -->
+
+    <form asp-action="Page2" method="post">
+        <label>First Name</label><input asp-for="FName" />
+        <br /><br />
+        <label>Last Name</label><input asp-for="LName" />
+        <br /><br />
+        <label>Email</label><input asp-for="Email" />
+        <br /><br />
+        <label>Phone Number</label><input asp-for="Phone" />
+        <br /><br />
+        <label>Address</label><input asp-for="Address" />
+        <br /><br />
+        <label>Username</label><input asp-for="UserName" />
+        <br /><br />
+        <label>Password</label><input asp-for="Password" />
+        <br /><br />
+        <button type="submit">submit</button>
+    </form>
+
+</body>
+</html>
